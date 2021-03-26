@@ -6,7 +6,7 @@ export default function Header() {
       <h1>PokeDex</h1>
       <p>
         All pokemon can be seen, use the arrow buttons to go to the next pokemon
-        or search by name or number!
+        or search by name or number! -Nathaniel Shirts
       </p>
     </header>
   );
