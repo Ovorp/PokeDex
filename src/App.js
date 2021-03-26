@@ -8,6 +8,8 @@ import './css/app.css';
 
 // Will change this from a list to look like a real pokedex
 
+// test
+
 export default class App extends Component {
   constructor(props) {
     super(props);
