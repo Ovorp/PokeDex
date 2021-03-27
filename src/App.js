@@ -100,7 +100,8 @@ export default class App extends Component {
   // };
 
   render() {
-    console.log(this.state.pokemonName[0], typeof this.state.pokemonName[0]);
+    console.log(this.state);
+
     return (
       <div className="App">
         <Header />
@@ -127,6 +128,12 @@ export default class App extends Component {
           </button>
           <span id="number"># {this.state.pokemonNumber}</span>
           <p id="name">{this.state.pokemonName}</p>
+          {this.state.types.length !== 0 ? (
+            <p className="type one">{this.state.types[0].type.name}</p>
+          ) : null}
+          {this.state.types.length === 2 ? (
+            <p className="type two">{this.state.types[1].type.name}</p>
+          ) : null}
         </div>
         {/* <button onClick={this.handleShowPokemon}>Show Pokemon</button> */}
         {/* <Button name="Next" buttonFn={this.handlePokemonChange} />
